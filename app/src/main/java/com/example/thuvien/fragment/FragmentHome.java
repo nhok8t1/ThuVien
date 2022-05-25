@@ -1,5 +1,7 @@
 package com.example.thuvien.fragment;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,8 +34,8 @@ public class FragmentHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         tvHome = view.findViewById(R.id.tvHome);
-        dao = new ThuThuDAO(getContext());
-        listThuThu = dao.getAll();
-        tvHome.setText("Welcome " + listThuThu.get(0).getMaTT());
+        SharedPreferences pref = getContext().getSharedPreferences("USER_FILE", Context.MODE_PRIVATE);
+        String user = pref.getString("USERNAME", null);
+        tvHome.setText("Welcome " + user);
     }
 }

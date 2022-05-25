@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "LibraryManager";
-    private static final int DATABASE_VERSION = 5;
+    private static final int DATABASE_VERSION = 6;
     static final String CREATE_TABLE_SACH = "CREATE TABLE Sach (maSach  INTEGER PRIMARY KEY AUTOINCREMENT,"
             + "tenSach TEXT NOT NULL," +
             "giaThue INTEGER NOT NULL," +

@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Không được để trống", Toast.LENGTH_SHORT).show();
                 } else {
                     if (dao.checklogin(strUser, strPass) > 0) {
-                        rememberUser(strUser, strPass, chkRememberPass.isChecked());
+                        rememberUser(strUser, strPass);
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
                         i.putExtra("us", strUser);
                         startActivity(i);
@@ -67,16 +67,18 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void rememberUser(String u, String p, boolean status) {
+    public void rememberUser(String u, String p) {
         SharedPreferences pref = getSharedPreferences("USER_FILE", MODE_PRIVATE);
         SharedPreferences.Editor edit = pref.edit();
-        if (!status) {
+        /*if (!status) {
             edit.clear();
         } else {
             edit.putString("USERNAME", u);
             edit.putString("PASSWORD", p);
             edit.putBoolean("REMEMBER", status);
-        }
+        }*/
+        edit.putString("USERNAME", u);
+        edit.putString("PASSWORD", p);
         edit.commit();
     }
 }
