@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.example.thuvien.ChangePassActivity;
 import com.example.thuvien.LoginActivity;
 import com.example.thuvien.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class FragmentNguoiDung extends Fragment {
     private Button btChangePass, btLogOut;
@@ -32,6 +33,7 @@ public class FragmentNguoiDung extends Fragment {
         btLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(getContext(), LoginActivity.class));
             }
         });

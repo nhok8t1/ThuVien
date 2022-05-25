@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218766045394",
+    "project_id": "modulelogin-cac0b",
+    "storage_bucket": "modulelogin-cac0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218766045394:android:97472a1b022b54b9f5bd0b",
+        "android_client_info": {
+          "package_name": "com.example.thuvien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218766045394-5hga43t25pq8623614o2pn79qdhg4uk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBGzXS4Dpm5s4HtMcrap7H7xxGUV9Zf7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218766045394-5hga43t25pq8623614o2pn79qdhg4uk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

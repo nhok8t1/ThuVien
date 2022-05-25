@@ -17,7 +17,7 @@
         android:text="Đổi mật khẩu"
         android:textSize="25dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <!--<com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp">
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:hint="Mật khẩu cũ"
             android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
