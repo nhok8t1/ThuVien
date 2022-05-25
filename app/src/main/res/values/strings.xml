@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ThuVien</string>
+    <string-array name="category">
+        <item>Tiểu thuyết</item>
+        <item>Truyện ngắn</item>
+        <item>Giáo trình</item>
+        <item>Thiếu nhi</item>
+        <item>Khoa học công nghệ – Kinh tế</item>
+        <item>Chính trị – Pháp luật</item>
+    </string-array>
+</resources>
