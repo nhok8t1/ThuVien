@@ -3,26 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
-        android:background="@color/teal_700"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/teal_700"
         android:orientation="vertical">
+
         <TextView
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="20dp"
-            android:text="Quản lý thư viện PTIT"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Quản lý thư viện PTIT"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/tvHome"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Từ ngày" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Đến ngày" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="GET DOANH THU" />
+
+        <TextView
+            android:id="@+id/tvDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
     </LinearLayout>
 </LinearLayout>
